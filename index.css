@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid: 70px 1fr 70px / 200px 1fr;
+}
+
+/* Estilização do header ====================================================== */
+
+header {
+    background-color: #ffc125;
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+header a{
+    text-decoration: none;
+    color: #D40D3D;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: .3s;
+}
+
+header a:hover {
+    color: #fff;
+}
+
+.logo img {
+    display: flex;
+    align-items: center;
+    width: 120px;
+}
+
+/* Estilização do menu ================================================== */
+
+.menu-left {
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    background-color: #D40D3D;
+}
+
+.menu-left ul {
+    list-style: none;
+    padding: 50px 0;
+  
+}
+
+.menu-left ul li {
+    margin-bottom: 10px ;
+    padding: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-left ul li a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 500;
+    overflow: hidden;
+    height: 30px;
+}
+
+.menu-left ul li a span {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: .3s;
+}
+
+.menu-left ul li:hover span:nth-child(1) {
+    transform: translateY(-100%);
+}
+
+.menu-left ul li:hover span:nth-child(2) {
+    color: #ffb800;
+    transform: translateY(-100%);
+}
+
+/* Estilização do conteúdo principal ======================================================= */
+
+.main-content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.txt-img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 48%;
+    padding: 20px;
+}
+
+.txt-img p {
+    padding-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.txt-img p:nth-child(2) {
+    font-size: 1rem;
+}
+
+
+.txt-img img {
+    max-width: 80%;
+    border-radius: 20px;
+}
+
+/* Estilização do card de simulação ============================================= */
+
+.card-simulator {
+    width: 30%;
+    background-color: #FFC700;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 10px;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+small {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card-money {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 120px;
+    background-color: #fff;
+    margin: 0 7.5px 15px;
+}
+
+.card-x {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    margin: 0 9px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-submit {
+    padding: 7px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+/* Esilização do footer ===================================================================== */
+
+footer {
+    grid-row: 3;
+    grid-column: 1/-1;
+    width: 100%;
+    background-color: #d8d8d8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
