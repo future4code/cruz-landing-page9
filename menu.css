@@ -127,6 +127,7 @@ footer {
 
     .logo img {
         width: 100px;
+        padding: 5px 0;
     }
 
     .menu-left {
