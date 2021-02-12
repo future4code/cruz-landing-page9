@@ -168,12 +168,17 @@ label{
   border: 1px solid #da1616 ;
 }
 
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 375px){
   
   body{
-    grid-template-columns: 1fr;
+   display: flex;
+   flex-wrap: wrap;
   }
   
+  .menu-left{
+    overflow: hidden;
+  }
+
   section{
     display: grid;
     grid-template-columns: 1fr;
