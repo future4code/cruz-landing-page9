@@ -92,3 +92,34 @@ small {
     background-color: #fff;
     margin-bottom: 10px;
 }
+
+/* Responsividade ============================================================= */
+
+@media (max-width: 375px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main-content {
+        width: 375px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .txt-img {
+        width: 375px;
+    }
+
+    .txt-img img {
+        max-width: 100%;
+        border-radius: 20px;
+        margin: 0 auto 40px;
+    }
+
+    .card-simulator {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    
+}
