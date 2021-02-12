@@ -29,7 +29,7 @@ article{
   /* height: 400px; */
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 }
 
 
@@ -50,7 +50,7 @@ h1{
   flex-direction: column;
   text-align: justify;
   /* border: 1px solid black; */
-  padding: 10px;
+  padding: 50px 10px;
 }
 
 .texto-simulador p{
@@ -68,10 +68,11 @@ h1{
 /* ------PRIMEIRA ARTICLE, DIV A DIREITA--------- */
 
 .simulador{
-  width: 50%;
-  height: 400px;
+  width: 33%;
+  height: 100%;
   border-radius: 50px;
   background-color: #ffd233;
+  padding: 40px 10px;
 }
 
 form{
@@ -86,13 +87,13 @@ form{
 label{
   width: 100%;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
 }
 
 .texto{
   text-align: center;
-  font-size: small;
+  font-size: 10px;
   margin-top: -15px;
   padding: 0 10px;
 }
@@ -103,7 +104,7 @@ label{
   justify-content: center;
   width: 40%;
   margin: 2%;
-  padding: 20px;
+  padding: 10px;
   background-color: white;
 }
 
@@ -117,7 +118,7 @@ label{
   justify-content: center;
   width: 18%;
   margin: 2%;
-  padding: 20px;
+  padding: 10px;
   background-color: #fff;
 }
 
