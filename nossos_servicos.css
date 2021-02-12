@@ -3,6 +3,7 @@
   padding: 0;
   font-family: 'Poppins';
   box-sizing: border-box;
+  font-weight: 500;
 }
 
 body{
@@ -10,6 +11,10 @@ body{
   grid-template-columns: 200px 1fr;
   grid-template-rows: 70px 1fr 70px;
   height: 100vh;
+}
+
+p{
+  font-size: 1rem;
 }
 
 /* --------------SECTION------------------ */
@@ -53,7 +58,7 @@ h1{
   flex-direction: column;
   text-align: justify;
   /* border: 1px solid black; */
-  padding: 50px 10px;
+  padding: 60px 10px;
 }
 
 .texto-simulador p{
@@ -66,10 +71,12 @@ h1{
   background-color: #fff;
   align-self: center;
   text-align: center;
+  margin-top: 15px;
 }
 
 .foto img{
   width: 91%;
+  border-radius: 15px;
 }
 
 /* ------PRIMEIRA ARTICLE, DIV A DIREITA--------- */
@@ -170,6 +177,10 @@ label{
 
 @media only screen and (max-width: 375px){
   
+  section{
+    height: 1200px;
+  }
+
   body{
    display: flex;
    flex-wrap: wrap;
@@ -177,6 +188,13 @@ label{
   
   .menu-left{
     overflow: hidden;
+  }
+
+  .menu-left h1{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
   }
 
   section{
