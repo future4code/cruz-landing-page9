@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: 'Poppins';
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
   font-weight: 500;
 }
@@ -40,13 +40,14 @@ article{
 }
 
 
-h1{
+section h1{
   /* display:  block; */
-  font-weight: 500;
-  font-size: 50px;
+  font-weight: 700;
+  font-size: 2rem;
   border-bottom: 1px solid #da1616;
   margin-bottom: 10px;
-  margin-right: 17%;
+  /* margin-right: 17%; */
+  text-align: left;
 }
 
 /* ------PRIMEIRA ARTICLE, DIV A ESQUERDA--------- */
@@ -63,6 +64,7 @@ h1{
 
 .texto-simulador p{
   padding: 0 20px;
+  font-weight: 500;
 }
 
 .foto{
@@ -123,10 +125,11 @@ label{
   margin: 2%;
   background-color: white;
   height: 50px;
+  cursor: pointer;
 }
 
 .valor:hover, .parcelas:hover{
-  background-color: rgb(153, 230, 123);
+  background-color: #da1616ad;
 }
 
 .parcelas{
@@ -137,6 +140,7 @@ label{
   margin: 2%;
   padding: 10px;
   background-color: #fff;
+  cursor: pointer;
 }
 
 
@@ -148,7 +152,7 @@ label{
 }
 
 .link-analise:hover{
-  background-color: rgb(108, 201, 71);
+  background-color: #da1616ad;
 }
 
 /* ------SEGUNDO ARTICLE --------- */
@@ -205,12 +209,14 @@ label{
     padding: 0;
   }
 
-  h1{
+  section h1{
     grid-column: 1/-1;
     grid-row: 1/2;
     text-align: center;
-    font-size: 40px;
+    font-size: 2rem;
+    font-weight: 700;
     margin: 0;
+    padding-bottom: 15px;
   }
 
 
@@ -237,8 +243,10 @@ label{
   }
 
   .simulador{
-    width: 100%;
+    width: 90%;
     margin: 0 5px;
+    padding: 40px 10px;
+    margin: 0 auto;
   }
 
   .texto{
