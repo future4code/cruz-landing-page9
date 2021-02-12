@@ -1,6 +1,7 @@
 *{
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Poppins';
 }
 
 body{
@@ -73,4 +74,26 @@ section{
 
 .formulario form button:hover{
   opacity: 70%;
+}
+
+@media only screen and (max-width: 375px){
+
+  body{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .menu-left{
+    overflow: hidden;
+  }
+
+  .formulario form{
+    width: 100%;
+    margin-top: -80px;
+  }
+
+  .formulario form textarea{
+    height: 70%;
+  }
+
 }
