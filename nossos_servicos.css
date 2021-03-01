@@ -1,0 +1,271 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+
+body{
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 70px 1fr 70px;
+  height: 100vh;
+}
+
+p{
+  font-size: 1rem;
+}
+
+/* --------------SECTION------------------ */
+
+section{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-left: 5%;
+}
+
+article{
+  flex-grow: 1;
+  width: 100%;
+  /* height: 400px; */
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  
+}
+
+
+section h1{
+  /* display:  block; */
+  font-weight: 700;
+  font-size: 2rem;
+  border-bottom: 1px solid #da1616;
+  margin-bottom: 10px;
+  /* margin-right: 17%; */
+  text-align: left;
+}
+
+/* ------PRIMEIRA ARTICLE, DIV A ESQUERDA--------- */
+
+.texto-simulador{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  /* border: 1px solid black; */
+  padding: 60px 10px;
+}
+
+.texto-simulador p{
+  padding: 0 20px;
+  font-weight: 500;
+}
+
+.foto{
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+  align-self: center;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.foto img{
+  width: 91%;
+  border-radius: 15px;
+}
+
+/* ------PRIMEIRA ARTICLE, DIV A DIREITA--------- */
+
+.simulador{
+  width: 33%;
+  height: 80%;
+  min-height: 320px;
+  border-radius: 20px;
+  background-color: #ffc700;
+  padding: 10px 10px;
+  margin-top: 3%;
+}
+
+form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 310px;
+}
+
+label{
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.texto{
+  text-align: center;
+  font-size: 10px;
+  margin-top: -15px;
+  padding: 0 10px;
+}
+
+.valor{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44%;
+  margin: 2%;
+  background-color: white;
+  height: 50px;
+  cursor: pointer;
+}
+
+.valor:hover, .parcelas:hover{
+  background-color: #da1616ad;
+}
+
+.parcelas{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  margin: 2%;
+  padding: 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+
+.link-analise{
+  padding: 7px;
+  text-decoration: none;
+  color: black;
+  background-color: #fff;
+}
+
+.link-analise:hover{
+  background-color: #da1616ad;
+}
+
+/* ------SEGUNDO ARTICLE --------- */
+
+.texto-controle-financeiro{
+  text-align: justify;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 17%;
+}
+
+.link-saiba-mais{
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid white;
+  text-decoration: none;
+  background-color: #ffc700;
+  color: #da1616;
+}
+
+.link-saiba-mais:hover{
+  border: 1px solid #da1616 ;
+}
+
+@media only screen and (max-width: 375px){
+  
+  section{
+    height: 1200px;
+  }
+
+  body{
+   display: flex;
+   flex-wrap: wrap;
+  }
+  
+  .menu-left{
+    overflow: hidden;
+  }
+
+  .menu-left h1{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 1fr;
+    width: 100%;
+    padding: 0;
+  }
+
+  section h1{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 15px;
+  }
+
+
+  section article:nth-child(2){
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    flex-wrap: wrap;
+  }
+
+  section article:nth-child(3){
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    justify-content: center;
+    align-self: start;
+  }
+
+  /* ----------ARTICLE----------------- */
+
+  .texto-simulador{
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    padding-top: 0;
+  }
+
+  .simulador{
+    width: 90%;
+    margin: 0 5px;
+    padding: 40px 10px;
+    margin: 0 auto;
+  }
+
+  .texto{
+    margin: 0;
+  }
+
+  .foto{
+    display: none;
+  }
+  
+  .valor{
+    padding: 10px;
+  }
+  .parcelas{
+    padding: 10px;
+  }
+
+  .texto-controle-financeiro{
+    padding: 30px;
+  }
+
+}
